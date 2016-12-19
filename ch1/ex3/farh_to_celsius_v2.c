@@ -2,7 +2,7 @@
 
 
 float K_5_BY_9 = 5.0 / 9.0;
-float K_32 = 32;
+float K_32 = 32.0;
 
 int SUCCESS = 0;
 
