@@ -4,10 +4,12 @@
 float K_5_BY_9 = 5.0 / 9.0;
 float K_32 = 32;
 
+int SUCCESS = 0;
+
 
 int main(void)
 {
-    float fahr, celsius;
+    float fahrenheit, celsius;
     int lower, upper, step;
 
     lower = 0;
@@ -18,14 +20,14 @@ int main(void)
     printf("|%4s|%6s|\n", "F", "C");
     printf("|-----------|\n");
 
-    fahr = lower;
-    while (fahr <= upper) {
-        celsius = K_5_BY_9 * (fahr - K_32);
-        printf("|%4.0f|%6.1f|\n", fahr, celsius);
-        fahr = fahr + step;
+    fahrenheit = lower;
+    while (fahrenheit <= upper) {
+        celsius = K_5_BY_9 * (fahrenheit - K_32);
+        printf("|%4.0f|%6.1f|\n", fahrenheit, celsius);
+        fahrenheit = fahrenheit + step;
     }
 
     printf("|-----------|\n");
     
-    return 0;
+    return SUCCESS;
 }
